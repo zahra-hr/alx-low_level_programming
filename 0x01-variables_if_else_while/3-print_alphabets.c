@@ -7,18 +7,19 @@
 
 int main(void)
 {
-	char i = 65;
+	char i = 97;
 
-	while (i <= 'Z')
-	{
-		putchar(i);
-		i++;
-	}
-	i = i + 6;
 	while (i <= 'z')
 	{
 		putchar(i);
 		i++;
 	}
+	i = 65;
+	while (i <= 'Z')
+	{
+		putchar(i);
+		i++;
+	}
+	putchar('\n');
 	return (0);
 }
