@@ -2,25 +2,20 @@
 
 /**
  * main - Entry point
- * Description: A C program that print alphabets lowercase and uppercase
+ * Description: A C program that print alphabets lowercase
  * Return: 0 (succes)
 */
 
 int main(void)
 {
-	char i = 'a';
-	char v = 'A';
+	char i;
 
-	while (i <= 'z')
+	for (i = 97; i <= 122; i++)
 	{
+		if (i == 101 || i == 113)
+			continue;
+
 		putchar(i);
-		i++;
-
-	}
-	while (v <= 'Z')
-	{
-		putchar(v);
-		v++;
 	}
 	putchar('\n');
 	return (0);
