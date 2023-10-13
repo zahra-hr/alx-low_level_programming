@@ -1,33 +1,18 @@
 #include "main.h"
 
 /**
- * print_triangle - function that prints a triangle
- * @size: parameter
+ * _isdigit - function to check if it is digit
+ *
+ * @c: parameter
+ *
+ * Return: 1 success 0 otherwise
+ *
 */
 
-void print_triangle(int size)
+int _isdigit(int c)
 {
-	int i = 1;
-	int j, d;
-
-	if (size <= 0)
-		_putchar('\n');
+	if (c <= 57 && c >= 48)
+		return (1);
 	else
-	{
-		while (i <= size)
-		{
-			j = size - i;
-			d = 1;
-			while (d <= size)
-			{
-				if (d <= j)
-					_putchar(' ');
-				else
-					_putchar('#');
-				d++;
-			}
-			_putchar('\n');
-			i++;
-		}
-	}
+		return (0);
 }
